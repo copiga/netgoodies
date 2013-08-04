@@ -2,6 +2,7 @@
 /*           TODO          */
 /***************************/
 /* come up with good names */
+/* make this not rubbish   */
 /***************************/
 
 class netgoodies : GLib.Object
@@ -44,4 +45,14 @@ class netgoodies : GLib.Object
 			return true;
 		return false;
 	}
+
+	public static void print_soup_message_response(Soup.Message message)
+	{
+		int i;
+		for(i=0;i<=message.response_body.length;i++)
+		{
+			stdout.printf("%c", message.response_body.data[i]);
+		}
+	}
 }
+
