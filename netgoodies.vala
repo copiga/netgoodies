@@ -24,10 +24,3 @@ class netgoodies : GLib.Object
 		}
 	}
 }
-
-int main(string[] args)
-{
-	if(netgoodies.string_is_hypertext_url("https://www.google.com"))
-		return 0;
-	return 1;
-}
